@@ -11,29 +11,29 @@
 
     <h1 class="title">D'Hondt method</h1>
 
-    <form class="form">
+    <form id="data-form" class="form">
 
         <div class="form__inputs">
             <label class="custom__field">
-                <input type="number" class="number__input" id="votesPartyA" required>
+                <input name="votes1" type="number" class="number__input" id="votesPartyA" required>
                 <span class="placeholder">Liczba Głosów Parti A</span>
             </label>
             <label class="custom__field">
-                <input type="number" class="number__input" id="votesPartyB" required>
+                <input name="votes2" type="number" class="number__input" id="votesPartyB" required>
                 <span class="placeholder">Liczba Głosów Parti B</span>
             </label>
             <label class="custom__field">
-                <input type="number" class="number__input" id="votesPartyC" required>
+                <input name="votes3" type="number" class="number__input" id="votesPartyC" required>
                 <span class="placeholder">Liczba Głosów Parti C</span>
             </label>
         </div>
 
         <div class="form__inputs">
             <label class="custom__field">
-                <input type="number" class="number__input" id="ticketsNumber" required>
+                <input name="tickets" type="number" class="number__input" id="ticketsNumber" required>
                 <span class="placeholder">Liczba Mandatów</span>
             </label>
-            <button class="form__button" onclick="">Oblicz</button>
+            <button class="form__button" type="submit">Oblicz</button>
         </div>
 
     </form>
@@ -42,19 +42,19 @@
         <ul class="results__list">
             <li class="results__list--items">
                 <span class="party">Partia - A</span>
-                <span class="tickets">xxx</span>
+                <span class="tickets" id="result-1"></span>
             </li>
             <li class="results__list--items">
                 <span class="party">Partia - B</span>
-                <span class="tickets">xxx</span>
+                <span class="tickets" id="result-2"></span>
             </li>
             <li class="results__list--items">
                 <span class="party">Partia - C</span>
-                <span class="tickets">xxx</span>
+                <span class="tickets" id="result-3"></span>
             </li>
         </ul>
     </section>
 
-    <script src="index.js"></script>
+    <script type="module" src="index.js"></script>
 </body>
 </html>
